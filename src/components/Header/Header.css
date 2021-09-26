@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  align-items: center;
+}
+
+header .brand-logo img{
+  height: 80px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+}
+
+header ul li {
+  padding: 8px 16px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
