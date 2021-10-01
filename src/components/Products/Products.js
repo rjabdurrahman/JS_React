@@ -44,13 +44,27 @@ export default function Products() {
                 background-color: rgba(255, 255, 255, 0.8);
                 padding: 12px 8px;
             }
+            button {
+                padding: 8px 16px;
+                color: black;
+                background: yellow;
+                border: none;
+                font-weight: bold;
+            }
+            button.cart {
+                background: white;
+            }
         }
     `
     return (
         <div>
             <h1>Products</h1>
             <ProductContainer>
-                {products.map(p => <li><ProrductCard {...p}></ProrductCard></li>)}
+                {products.map(p => (
+                    <li key={p.name}>
+                        <ProrductCard {...p}></ProrductCard>
+                    </li>
+                ))}
             </ProductContainer>
         </div>
     )
