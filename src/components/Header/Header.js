@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import CoinDetails from '../CoinDetails'
 import './Header.css'
 
 export default function Header() {
@@ -9,6 +10,9 @@ export default function Header() {
             </div>
             <nav>
                 <ul>
+                    <li>
+                        <CoinDetails />
+                    </li>
                     <li>
                         <Link to="/">HOME</Link>
                     </li>
