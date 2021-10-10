@@ -12,6 +12,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer"
 import Page_404 from "./components/Page_404";
 import Products from "./components/Products/Products";
+import Categories from "./components/Categories/Categories";
 // Routes
 // siteurl/route-path
 // Home/Landing Page - /
@@ -29,6 +30,7 @@ export default function Routes() {
     return (
             <Router>
                 <Header />
+                <Categories />
                 <Switch>
                     <Route path="/" component={Home} exact />
                     <Route path="/login" component={Login} exact />

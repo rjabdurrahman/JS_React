@@ -1,7 +1,10 @@
+import Categories from "./Categories/Categories";
+
 export default function LeftSidebar() {
     return (
         <div className="left-sidebar">
-            <h1>Left Siebar</h1>
+            {/* <Categories /> */}
+            <h1>Sidebar</h1>
         </div>
     );
 }

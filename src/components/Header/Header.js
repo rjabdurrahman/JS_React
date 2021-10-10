@@ -1,18 +1,14 @@
 import { Link } from 'react-router-dom'
-import CoinDetails from '../CoinDetails'
 import './Header.css'
 
 export default function Header() {
     return (
-        <header>
+        <header style={{backgroundColor: 'teal', color: 'white'}}>
             <div className="brand-logo">
-                <img src="https://hunnycoders.com/img/hunny%20coders.jpg" alt="HC"/>
+                {/* <img src="https://hunnycoders.com/img/hunny%20coders.jpg" alt="HC"/> */}
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <CoinDetails />
-                    </li>
                     <li>
                         <Link to="/">HOME</Link>
                     </li>

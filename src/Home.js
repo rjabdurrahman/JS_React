@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 function Home() {
   const Main = styled.div`
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 350px calc(100% - 550px) 200px;
   `
   return (
     <>

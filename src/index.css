@@ -10,3 +10,7 @@ body {
 input:focus {
   outline: none;
 }
+
+.f-exo {
+  font-family: 'Exo 2', sans-serif;
+}
