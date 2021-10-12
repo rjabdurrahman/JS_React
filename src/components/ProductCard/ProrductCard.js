@@ -15,43 +15,60 @@ export default function ProrductCard({ name, price }) {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 8px 12px;
+        > * {
+            width: 100%;
+        }
         button {
-            padding: 8px 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px 16px;
             background: #3749BB;
             color: #fff;
             border: 0;
             text-align: center;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
         }
-        img {
-            width: 320px;
-            height: 280px;
-            border-radius: 10px;
+        >div {
+            margin-left: -16px;
+            img {
+                width: 336px;
+                height: 280px;
+                border-radius: 10px;
+            }
         }
         h4 {
+            box-sizing: border-box;
             margin: 0;
-            padding: 0 8px;
+            padding: 4px 8px;
             font-size: 20px;
         }
         h5 {
+            box-sizing: border-box;
             margin: 8px 0;
-            padding: 8px 0;
+            padding: 8px;
             line-height: 22px;
-            font-size: 17px;
+            font-size: 22px;
             font-weight: bold;
             color: #EF4A23;
             text-align: center;
-            border-top: 1px solid silver;
-            border-bottom: 1px solid silver;
+            border-top: 1px solid #f0eeee;
         }
     `
     return (
         <ProductContainer>
-            <img src={productImg} alt={name} />
+            <div>
+                <img src={productImg} alt={name} />
+            </div>
             <h4>{name}</h4>
             <h5>${price}</h5>
             <button>
+                <FaCartPlus size={18} />
                 <span>Buy Now</span>
-                <FaCartPlus size={25} />
             </button>
         </ProductContainer>
     )

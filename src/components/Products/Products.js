@@ -23,9 +23,6 @@ export default function Products() {
             background: #f2f4f8;
             border-top: 1px solid #ddd;
             padding: 20px;
-            li {
-                background: white;
-            }
         }
     `
     return (
