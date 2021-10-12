@@ -29,6 +29,7 @@ export default function Categories() {
                     position: absolute;
                     top: 42px;
                     background-color: red;
+                    z-index: 999;
                     display: none;
                 }
                 &:hover ul{
