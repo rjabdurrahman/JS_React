@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Categories() {
     const CetegoryContainer = styled.div`
@@ -17,6 +18,10 @@ export default function Categories() {
                 position: relative;
                 padding: 8px 16px;
                 cursor: pointer;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
                 >ul {
                     list-style: none;
                     padding: 0;
@@ -80,8 +85,9 @@ export default function Categories() {
             <ul>
                 {categories.map(obj => (
                     <li>
-                        <span>{obj.category} {obj.childs.length !== 0 && <b>&#8964;</b>}</span>
-                        {obj.childs.length !== 0 && <ul>
+                        {obj.childs.length === 0 && <Link to={'/category/' + obj.category.toLocaleLowerCase()}>{obj.category}</Link>}
+                        {obj.childs.length > 0 && <span>{obj.category}</span>}
+                        {obj.childs.length > 0 && <ul>
                             {obj.childs.map(c => <li>{c.category}</li>)}
                         </ul>}
                     </li>

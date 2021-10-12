@@ -5,67 +5,38 @@ import styled from '@emotion/styled'
 export default function Products() {
     let products = [
         {
-            name: "A",
+            name: "Antec Signature PLATINUM 1300 1300W 80 Plus Platinum Fully Modular Power Supply",
             price: 1000
         },
         {
-            name: "B",
+            name: "CORSAIR ICUE SP120 RGB ELITE 120MM white PWM FAN TRIPLE PACK",
             price: 2000
-        },
-        {
-            name: "C",
-            price: 3000
-        },
-        {
-            name: "D",
-            price: 4000
-        },
+        }
     ]
-    const ProductContainer = styled.ul`
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-        li {
+    const ProductContainer = styled.div`
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: #f2f4f8;
+            border-top: 1px solid #ddd;
             padding: 20px;
-            background: lightgray;
-            position: relative;
-            img {
-                height: 200px;
-                width: 250px;
-            }
-            h5 {
-                margin: 0;
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 22px;
-                background-color: rgba(255, 255, 255, 0.8);
-                padding: 12px 8px;
-            }
-            button {
-                padding: 8px 16px;
-                color: black;
-                background: yellow;
-                border: none;
-                font-weight: bold;
-            }
-            button.cart {
+            li {
                 background: white;
             }
         }
     `
     return (
-        <div>
-            <h1>Products</h1>
-            <ProductContainer>
+        <ProductContainer>
+            <ul>
                 {products.map(p => (
                     <li key={p.name}>
                         <ProrductCard {...p}></ProrductCard>
                     </li>
                 ))}
-            </ProductContainer>
-        </div>
+            </ul>
+        </ProductContainer>
     )
 }

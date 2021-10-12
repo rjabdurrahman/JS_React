@@ -35,7 +35,7 @@ export default function Routes() {
                     <Route path="/" component={Home} exact />
                     <Route path="/login" component={Login} exact />
                     <Route path="/signup" component={Registration} exact />
-                    <Route path="/category/:id" component={Category} exact />
+                    <Route path="/category/:name" component={Category} exact />
                     <Route path="/products" component={Products} exact />
                     <Route path="/:others" component={Page_404} exact />
                 </Switch>
