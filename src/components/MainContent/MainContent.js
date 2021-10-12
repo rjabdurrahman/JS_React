@@ -1,8 +1,10 @@
 import Products from "../Products/Products";
+import TitleBar from "../TitleBar";
+
 export default function MainContent() {
     return (
         <div className="main-content">
-            <h1 style={{ padding: '0 24px' }} className="f-exo">Featured Products</h1>
+            <TitleBar title="Featured Products" />
             <Products />
         </div>
     );

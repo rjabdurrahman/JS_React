@@ -15,13 +15,13 @@ export default function Products() {
     ]
     const ProductContainer = styled.div`
         ul {
+            margin: 0;
             list-style: none;
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
             background: #f2f4f8;
-            border-top: 1px solid #ddd;
             padding: 20px;
         }
     `
